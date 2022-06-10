@@ -1,0 +1,33 @@
+<h2>Courses List</h2>
+
+<table class="table table-striped">
+    <caption></caption>
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Code</th>
+            <th>Release Date</th>
+            <th>Rating</th>
+            <th>Option</th>
+         </tr>   
+    </thead>
+
+    <tbody>
+        <tr *ngFor='let course of courses'>
+            <td><img [src]="course.imageUrl" width="40" height="40"></td>
+            <td>{{ course.name }}</td>
+            <td>{{ course.price }}</td>
+            <td>{{ course.code}}</td>
+            <td>{{ course.releaseDate }}</td>
+            <td>
+                <app-star [rating]="course.rating"></app-star>
+
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<b>Fiscal Setorial:</b> <br>2 ° SARGENTO JAIRO LARA DIAS<br><br><b>Matrícula PMDF:</b> <br>21288/1<br><br><b>Telefone:</b> <br>981838258<br><br><b>E-Mail:</b> <br>JAIROLARAD@GMAIL.COM<br><br><b>Unidade:</b> <br>CPQV<br><br><b>Endereço:</b> <br>CPQV -  SSM<br><br><br><br><b>Nº de Série:</b> <br>2BH04598.<br><br><b>CONTADOR N°:</b>  <br>16199<br><br><br><b>Tipo de Serviço:</b> <br>Reparo da Impressora<br><br><b>Problema Relatado:</b><br>impressão com risco na Folha em excesso..<br><br><b>Horário de Atendimento:</b> <br>De 2º a Sexta das 13h às 19h 
+
